@@ -1,12 +1,16 @@
+{% load static %}
+
 <html>
 	<head>
+			<link href="{% static 'mycss.css'%}" rel="stylesheet">
 	</head>
 	<body onload="InitDemo();">
-		<canvas id="game-surface" width="800" height="600">
+		<canvas id="game-surface">
 			Not supported
 		</canvas>
 		<br />
 		<i> Demo above text </i>
 		<script src="/static/app.js"></script>
+		<script src="/static/gl-matrix.js"></script>
 	</body>
 </html>
